@@ -1,0 +1,36 @@
+/* Accessibility Toolbar Styles */
+#accessibility-toolbar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000; 
+  }
+
+  /* Custom CSS  */
+  .jumbotron {
+    background-image: url('path/to/your/header-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    font-size: 3em;
+    color: #007bff; 
+  }
+
+  #changeFontSizeBtn {
+    padding: 10px; 
+    border: none;
+    background-color: transparent; /* Atau warna latar belakang yang Anda inginkan */
+    cursor: pointer;
+  }
+  
+  #changeFontSizeBtn i {
+    font-size: 1.5em; /* Atur ukuran ikon */
+  }
