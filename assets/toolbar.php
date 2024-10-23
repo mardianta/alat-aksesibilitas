@@ -91,13 +91,6 @@
         }
     });
 
-    // Add event listener for Ctrl + Q to close the accessibility menu
-    document.addEventListener('keydown', function(event) {
-        if (event.ctrlKey && event.key === 'q') {
-            document.getElementById('widgetContainer').style.display = 'none';
-        }
-    });
-
     // Menambahkan event listener untuk logo Google
     googleLogo.addEventListener('click', function() {
         accessibilityToolbar.classList.remove('hidden'); // Menampilkan konten
