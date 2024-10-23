@@ -1,14 +1,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <div id="accessibility-toolbar">
-
     <div class="header">
         <div class="title">Menu Aksesibilitas (CTRL+U)</div>
-        <div class="close-button" id="closeButton" onclick="toggleWidget()">
-            <img id="logoImage" class="fas fa-times"> <!-- Ganti dengan path logo Anda -->
-            <i class="fas fa-times"></i>
+        <div class="" id="closeButton">
+            <i class="fas fa-times" id="closeIcon" style="font-size: 30px;"></i>
         </div>
     </div>
-
     <div class="widget-container" id="widgetContainer">
         <div class="widget-grid">
             <div class="widget-item">
@@ -57,27 +54,49 @@
         <br>
         <div class="footer">
             <button class="reset-button">
-                <i class="fas fa-sync-alt">
-                </i>
+                <i class="fas fa-sync-alt"></i>
                 Atur Ulang Semua Pengaturan Aksesibilitas
             </button>
             <div>
-                <a href="#">
-                    Laporkan masalah
-                </a>
+                <a href="#">Laporkan masalah</a>
             </div>
         </div>
     </div>
-
+</div>
 </div>
 
+<!-- Logo Google -->
+<img id="googleLogo" src="https://unair.ac.id/wp-content/uploads/2021/02/unair-logo-borderFX.png" alt="Logo Google" style="cursor: pointer;">
+
 <script>
-    function toggleWidget() {
-        var widgetContainer = document.getElementById('widgetContainer');
-        if (widgetContainer.style.display === 'none' || widgetContainer.style.display === '') {
-            widgetContainer.style.display = 'block';
-        } else {
-            widgetContainer.style.display = 'none';
-        }
+    // Mendapatkan elemen tombol close, konten widget, dan logo Google
+const closeButton = document.getElementById('closeButton');
+const widgetContainer = document.getElementById('widgetContainer');
+const accessibilityToolbar = document.getElementById('accessibility-toolbar');
+const closeIcon = document.getElementById('closeIcon');
+const googleLogo = document.getElementById('googleLogo');
+
+// Menambahkan event listener untuk tombol close
+closeButton.addEventListener('click', function() {
+    accessibilityToolbar.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
+    widgetContainer.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
+    if (widgetContainer.classList.contains('hidden')) {
+        closeIcon.classList.remove('fa-times'); // Menghapus ikon close
+        closeIcon.classList.add('fa-plus'); // Menambahkan ikon plus
+        googleLogo.style.display = 'block'; // Menampilkan logo Google
+    } else {
+        closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
+        closeIcon.classList.add('fa-times'); // Menambahkan ikon close
+        googleLogo.style.display = 'none'; // Menyembunyikan logo Google
     }
+});
+
+// Menambahkan event listener untuk logo Google
+googleLogo.addEventListener('click', function() {
+    accessibilityToolbar.classList.remove('hidden'); // Menampilkan konten
+    widgetContainer.classList.remove('hidden'); // Menampilkan konten
+    closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
+    closeIcon.classList.add('fa-times'); // Menambahkan ikon close
+    googleLogo.style.display = 'none'; // Menyembunyikan logo Google
+});
 </script>
