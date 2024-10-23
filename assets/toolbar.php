@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <div id="accessibility-toolbar">
     <div class="header">
-        <div class="title">Menu Aksesibilitas (CTRL+U)</div>
+        <div class="title">Menu Aksesibilitas (CTRL+Q)</div>
         <div class="" id="closeButton">
             <i class="fas fa-times" id="closeIcon" style="font-size: 30px;"></i>
         </div>
@@ -70,33 +70,40 @@
 
 <script>
     // Mendapatkan elemen tombol close, konten widget, dan logo Google
-const closeButton = document.getElementById('closeButton');
-const widgetContainer = document.getElementById('widgetContainer');
-const accessibilityToolbar = document.getElementById('accessibility-toolbar');
-const closeIcon = document.getElementById('closeIcon');
-const googleLogo = document.getElementById('googleLogo');
+    const closeButton = document.getElementById('closeButton');
+    const widgetContainer = document.getElementById('widgetContainer');
+    const accessibilityToolbar = document.getElementById('accessibility-toolbar');
+    const closeIcon = document.getElementById('closeIcon');
+    const googleLogo = document.getElementById('googleLogo');
 
-// Menambahkan event listener untuk tombol close
-closeButton.addEventListener('click', function() {
-    accessibilityToolbar.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
-    widgetContainer.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
-    if (widgetContainer.classList.contains('hidden')) {
-        closeIcon.classList.remove('fa-times'); // Menghapus ikon close
-        closeIcon.classList.add('fa-plus'); // Menambahkan ikon plus
-        googleLogo.style.display = 'block'; // Menampilkan logo Google
-    } else {
+    // Menambahkan event listener untuk tombol close
+    closeButton.addEventListener('click', function() {
+        accessibilityToolbar.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
+        widgetContainer.classList.toggle('hidden'); // Menyembunyikan atau menampilkan konten
+        if (widgetContainer.classList.contains('hidden')) {
+            closeIcon.classList.remove('fa-times'); // Menghapus ikon close
+            closeIcon.classList.add('fa-plus'); // Menambahkan ikon plus
+            googleLogo.style.display = 'block'; // Menampilkan logo Google
+        } else {
+            closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
+            closeIcon.classList.add('fa-times'); // Menambahkan ikon close
+            googleLogo.style.display = 'none'; // Menyembunyikan logo Google
+        }
+    });
+
+    // Add event listener for Ctrl + Q to close the accessibility menu
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'q') {
+            document.getElementById('widgetContainer').style.display = 'none';
+        }
+    });
+
+    // Menambahkan event listener untuk logo Google
+    googleLogo.addEventListener('click', function() {
+        accessibilityToolbar.classList.remove('hidden'); // Menampilkan konten
+        widgetContainer.classList.remove('hidden'); // Menampilkan konten
         closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
         closeIcon.classList.add('fa-times'); // Menambahkan ikon close
         googleLogo.style.display = 'none'; // Menyembunyikan logo Google
-    }
-});
-
-// Menambahkan event listener untuk logo Google
-googleLogo.addEventListener('click', function() {
-    accessibilityToolbar.classList.remove('hidden'); // Menampilkan konten
-    widgetContainer.classList.remove('hidden'); // Menampilkan konten
-    closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
-    closeIcon.classList.add('fa-times'); // Menambahkan ikon close
-    googleLogo.style.display = 'none'; // Menyembunyikan logo Google
-});
+    });
 </script>
