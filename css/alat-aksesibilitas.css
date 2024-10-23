@@ -222,7 +222,7 @@ body {
   display: none; /* Kelas untuk menyembunyikan konten */
 }
 #googleLogo {
-  display: block; /* Tampilkan logo Google */
+  display: none; /* Tampilkan logo Google */
   bottom: 20px; /* Atur posisi vertikal logo */
   left: 20px; /* Atur posisi logo di kiri bawah */
   width: 100px; /* Atur lebar logo */
