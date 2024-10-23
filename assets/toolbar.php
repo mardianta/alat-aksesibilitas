@@ -2,7 +2,7 @@
 <div id="accessibility-toolbar">
     <div class="header">
         <div class="title">Menu Aksesibilitas (CTRL+Q)</div>
-        <div class="" id="closeButton">
+        <div class="" id="closeButton" accesskey="q">
             <i class="fas fa-times" id="closeIcon" style="font-size: 30px;"></i>
         </div>
     </div>
@@ -88,6 +88,14 @@
             closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
             closeIcon.classList.add('fa-times'); // Menambahkan ikon close
             googleLogo.style.display = 'none'; // Menyembunyikan logo Google
+        }
+    });
+
+    // Menambahkan event listener untuk peristiwa keyboard
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'q') {
+            // Jika tombol Ctrl+Q ditekan, buka atau tutup toolbar aksesibilitas
+            closeButton.click();
         }
     });
 
