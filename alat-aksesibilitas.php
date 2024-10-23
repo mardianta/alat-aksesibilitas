@@ -5,7 +5,7 @@
  * Description: Plugin Alat Aksesibilitas WordPress ini dirancang untuk meningkatkan aksesibilitas situs web Anda bagi semua pengguna, termasuk mereka yang memiliki kebutuhan khusus. Dengan berbagai alat dan fitur, plugin ini membantu memastikan bahwa konten Anda dapat diakses dengan mudah oleh semua orang.
  * Status: Stable
  * Version: 1.1.0
- * Author: <a href="https://github.com/mardianta/alat-aksesibilitas">Alat Aksesibilitas</a> | <a href="#" class="thickbox open-plugin-details-modal" aria-label="More information about Classic Editor" data-title="Classic Editor">View details</a>
+ * Author: <a href="https://github.com/mardianta/alat-aksesibilitas">Alat Aksesibilitas</a> | <a href="#" class="thickbox open-plugin-details-modal" aria-label="More information about Alat Aksesibilitas" data-title="Alat Aksesibilitas">View details</a>
  * Contributors: wordpressdotorg, mardianta, amirfian
  * Tags: aksesibilitas, disable, disable aksesibilitas, editor, classic editor, block editor
  * Requires at least: 4.9
