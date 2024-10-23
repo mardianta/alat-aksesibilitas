@@ -2,6 +2,7 @@
 #accessibility-toolbar {
   position: fixed;
   left: 0px;
+  background-color: #1E4A7B;
   border-radius: 5px;
   z-index: 100;
 }
@@ -42,6 +43,36 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.header {
+  background-color: #1E4A7B;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .title {
+  font-size: 16px;
+}
+
+.header .close-button {
+  background-color: #1E4A7B;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .close-button i {
+  color: white;
+  font-size: 12px;
 }
 
 .container {
