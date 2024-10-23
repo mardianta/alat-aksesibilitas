@@ -1,8 +1,5 @@
-<!-- <div id="accessibility-toolbar">
-  <h2>Alat Aksesibilitas</h2>
-  <button id="changeFontSizeBtn">Ubah Ukuran Font</button>
-</div>  -->
-
+<div id="accessibility-toolbar">
+  
 <div class="widget-container">
     <h2>Alat Aksesibilitas</h2>
         <div class="widget-header">
@@ -19,8 +16,10 @@
                 <span>Sorot tautan</span>
             </div>
             <div class="widget-item">
+                <button id="changeFontSizeBtn">
                 <i class="fas fa-text-height"></i>
                 <span>Teks Lebih Besar</span>
+</button>
             </div>
             <div class="widget-item">
                 <i class="fas fa-arrows-alt-h"></i>
@@ -60,3 +59,4 @@
             </div>
         </div>
     </div>
+</div>
