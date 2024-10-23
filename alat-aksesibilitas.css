@@ -45,6 +45,7 @@
     align-items: center;
     height: 100vh;
 }
+
 .widget-container {
     background-color: white;
     border-radius: 10px;
@@ -52,16 +53,19 @@
     width: 300px;
     padding: 20px;
 }
+
 .widget-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .widget-header h1 {
     font-size: 16px;
     margin: 0;
 }
+
 .widget-header .close-btn {
     background-color: #2c3e50;
     color: white;
@@ -74,11 +78,13 @@
     align-items: center;
     cursor: pointer;
 }
+
 .widget-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+
 .widget-item {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -92,10 +98,12 @@
     justify-content: center;
     height: 80px;
 }
+
 .widget-item i {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
 .widget-item.selected {
     border: 2px solid #007bff;
 }
