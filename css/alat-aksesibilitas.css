@@ -217,3 +217,14 @@ body {
 .widget-item.selected {
   border: 2px solid #007bff;
 }
+
+.hidden {
+  display: none; /* Kelas untuk menyembunyikan konten */
+}
+#googleLogo {
+  display: block; /* Tampilkan logo Google */
+  bottom: 20px; /* Atur posisi vertikal logo */
+  left: 20px; /* Atur posisi logo di kiri bawah */
+  width: 100px; /* Atur lebar logo */
+  position: fixed; /* Tetap pada posisi saat scroll */
+}
