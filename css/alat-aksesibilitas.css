@@ -230,8 +230,8 @@ body {
 }
 #googleLogo {
   display: none; /* Tampilkan logo Google */
-  bottom: 20px; /* Atur posisi vertikal logo */
-  left: 20px; /* Atur posisi logo di kiri bawah */
+  bottom: 10px; /* Atur posisi vertikal logo */
+  left: 10px; /* Atur posisi logo di kiri bawah */
   width: 100px; /* Atur lebar logo */
   position: fixed; /* Tetap pada posisi saat scroll */
 }
