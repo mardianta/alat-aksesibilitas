@@ -11,22 +11,26 @@
     <div class="widget-container">
         <div class="widget-grid">
             <div class="widget-item">
-                <i class="fas fa-adjust"></i>
-                <span>Kontras +</span>
-            </div>
-            <div class="widget-item">
-                <i class="fas fa-link"></i>
-                <span>Sorot tautan</span>
-            </div>
-            <div class="widget-item">
                 <button id="changeFontSizeBtn">
                     <i class="fas fa-text-height"></i>
                     <span>Teks Lebih Besar</span>
                 </button>
             </div>
             <div class="widget-item">
+                <i class="fas fa-text-height"></i>
+                <span>Tinggi garis</span>
+            </div>
+            <div class="widget-item">
                 <i class="fas fa-arrows-alt-h"></i>
                 <span>Spasi teks</span>
+            </div>
+            <div class="widget-item">
+                <i class="fas fa-link"></i>
+                <span>Sorot tautan</span>
+            </div>
+            <div class="widget-item">
+                <i class="fas fa-adjust"></i>
+                <span>Kontras +</span>
             </div>
             <div class="widget-item">
                 <i class="fas fa-spinner"></i>
@@ -43,10 +47,6 @@
             <div class="widget-item">
                 <i class="fas fa-comment-alt"></i>
                 <span>Keterangan alat</span>
-            </div>
-            <div class="widget-item">
-                <i class="fas fa-text-height"></i>
-                <span>Tinggi garis</span>
             </div>
             <div class="widget-item">
                 <i class="fas fa-tint"></i>
