@@ -3,12 +3,13 @@
 
     <div class="header">
         <div class="title">Menu Aksesibilitas (CTRL+U)</div>
-        <div class="close-button">
+        <div class="close-button" id="closeButton" onclick="toggleWidget()">
+            <img id="logoImage" class="fas fa-times"> <!-- Ganti dengan path logo Anda -->
             <i class="fas fa-times"></i>
         </div>
     </div>
 
-    <div class="widget-container">
+    <div class="widget-container" id="widgetContainer">
         <div class="widget-grid">
             <div class="widget-item">
                 <button id="changeFontSizeBtn">
@@ -69,3 +70,14 @@
     </div>
 
 </div>
+
+<script>
+    function toggleWidget() {
+        var widgetContainer = document.getElementById('widgetContainer');
+        if (widgetContainer.style.display === 'none' || widgetContainer.style.display === '') {
+            widgetContainer.style.display = 'block';
+        } else {
+            widgetContainer.style.display = 'none';
+        }
+    }
+</script>
