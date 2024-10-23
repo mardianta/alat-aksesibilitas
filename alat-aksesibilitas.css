@@ -1,105 +1,187 @@
 /* Accessibility Toolbar Styles */
 #accessibility-toolbar {
-    position: fixed;
-    left: 0px;
-    border-radius: 5px;
-    z-index: 100;
-  }
+  position: fixed;
+  left: 0px;
+  border-radius: 5px;
+  z-index: 100;
+}
 
-  /* Custom CSS  */
-  .jumbotron {
-    background-image: url('path/to/your/header-image.jpg'); 
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .feature-icon {
-    font-size: 3em;
-    color: #007bff; 
-  }
+/* Custom CSS  */
+.jumbotron {
+  background-image: url('path/to/your/header-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
 
-  #changeFontSizeBtn {
-    padding: 10px; 
-    border: none;
-    background-color: transparent; /* Atau warna latar belakang yang Anda inginkan */
-    cursor: pointer;
-  }
-  
-  #changeFontSizeBtn i {
-    font-size: 1.5em; /* Atur ukuran ikon */
-  }
+.feature-icon {
+  font-size: 3em;
+  color: #007bff;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+#changeFontSizeBtn {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  /* Atau warna latar belakang yang Anda inginkan */
+  cursor: pointer;
+}
+
+#changeFontSizeBtn i {
+  font-size: 1.5em;
+  /* Atur ukuran ikon */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-grid div {
+  background-color: #f5f7fa;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-grid div i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.button-grid div span {
+  font-size: 14px;
+  color: #333;
+}
+
+.reset-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 12px;
+  color: #333;
+}
+
+.footer a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.footer .manage-button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer .logo img {
+  height: 20px;
+  margin-right: 5px;
 }
 
 .widget-container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
 }
 
 .widget-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .widget-header h1 {
-    font-size: 16px;
-    margin: 0;
+  font-size: 16px;
+  margin: 0;
 }
 
 .widget-header .close-btn {
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .widget-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 .widget-item {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
 }
 
 .widget-item i {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .widget-item.selected {
-    border: 2px solid #007bff;
+  border: 2px solid #007bff;
 }
