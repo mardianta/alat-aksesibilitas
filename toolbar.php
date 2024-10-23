@@ -1,8 +1,9 @@
-<div id="accessibility-toolbar">
+<!-- <div id="accessibility-toolbar">
   <h2>Alat Aksesibilitas</h2>
   <button id="changeFontSizeBtn">Ubah Ukuran Font</button>
-  
-  <div class="widget-container">
+</div>  -->
+
+<div class="widget-container">
     <h2>Alat Aksesibilitas</h2>
         <div class="widget-header">
             <h1>Widget kebesaran</h1>
@@ -59,5 +60,3 @@
             </div>
         </div>
     </div>
-
-</div>
