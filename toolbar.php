@@ -1,10 +1,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <div id="accessibility-toolbar">
-    <div class="widget-container">
-        <div class="widget-header">
-            <h1>Widget kebesaran</h1>
-            <button class="close-btn">&times;</button>
+
+    <div class="header">
+        <div class="title">Menu Aksesibilitas (CTRL+U)</div>
+        <div class="close-button">
+            <i class="fas fa-times"></i>
         </div>
+    </div>
+
+    <div class="widget-container">
         <div class="widget-grid">
             <div class="widget-item">
                 <i class="fas fa-adjust"></i>
@@ -29,10 +33,6 @@
                 <span>Animasi dijeda</span>
             </div>
             <div class="widget-item">
-                <i class="fas fa-image"></i>
-                <span>Sembunyikan Gambar</span>
-            </div>
-            <div class="widget-item">
                 <i class="fas fa-info-circle"></i>
                 <span>Ramah Disleksia</span>
             </div>
@@ -49,14 +49,23 @@
                 <span>Tinggi garis</span>
             </div>
             <div class="widget-item">
-                <i class="fas fa-align-left"></i>
-                <span>Perataan Teks</span>
-            </div>
-            <div class="widget-item">
                 <i class="fas fa-tint"></i>
                 <span>Kejenuhan</span>
             </div>
         </div>
-
+        <br>
+        <div class="footer">
+            <button class="reset-button">
+                <i class="fas fa-sync-alt">
+                </i>
+                Atur Ulang Semua Pengaturan Aksesibilitas
+            </button>
+            <div>
+                <a href="#">
+                    Laporkan masalah
+                </a>
+            </div>
+        </div>
     </div>
+
 </div>
