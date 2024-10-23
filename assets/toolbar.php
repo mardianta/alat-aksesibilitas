@@ -63,7 +63,7 @@
         </div>
     </div>
     <footer>
-        <p class="copyright">© 2024, All rights reserved.</p>
+        <p class="copyright">© 2024 All rights reserved.</p>
     </footer>
 </div>
 </div>
