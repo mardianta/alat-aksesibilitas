@@ -62,6 +62,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p>© 2023 Unair. All rights reserved.</p>
+    </footer>
 </div>
 </div>
 
