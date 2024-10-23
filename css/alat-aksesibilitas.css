@@ -218,6 +218,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 80px;
+  border: -2px;
 }
 
 .widget-item i {
