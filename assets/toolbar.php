@@ -2,10 +2,9 @@
 <div id="accessibility-toolbar">
 
     <div class="header">
-        <div class="title">Menu Aksesibilitas (CTRL+U)</div>
+        <div class="title">Menu Aksesibilitas (CTRL+Q)</div>
         <div class="close-button" id="closeButton" onclick="toggleWidget()">
-            <img id="logoImage" class="fas fa-times"> <!-- Ganti dengan path logo Anda -->
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times"></i><!-- Ganti dengan path logo Anda -->
         </div>
     </div>
 
@@ -69,6 +68,9 @@
         </div>
     </div>
 
+    <!-- Image to toggle accessibility menu -->
+    <img src="https://unair.ac.id/wp-content/uploads/2021/02/unair-logo-borderFX.png" id="accessibilityToggle" alt="Toggle Accessibility Menu" style="cursor: pointer;">
+
 </div>
 
 <script>
@@ -80,4 +82,14 @@
             widgetContainer.style.display = 'none';
         }
     }
+
+    // Add event listener for Ctrl + Q to close the accessibility menu
+    document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.key === 'q') {
+            document.getElementById('widgetContainer').style.display = 'none';
+        }
+    });
+
+    // Add click event to the image to toggle the menu
+    document.getElementById('accessibilityToggle').onclick = toggleWidget;
 </script>
