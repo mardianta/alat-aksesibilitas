@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Alat Aksesibilitas
- * Plugin Alat Aksesibilitas WordPress ini dirancang untuk meningkatkan aksesibilitas situs web Anda bagi semua pengguna, termasuk mereka yang memiliki kebutuhan khusus. Dengan berbagai alat dan fitur, plugin ini membantu memastikan bahwa konten Anda dapat diakses dengan mudah oleh semua orang.
+ * Describsion: Plugin Alat Aksesibilitas WordPress ini dirancang untuk meningkatkan aksesibilitas situs web Anda bagi semua pengguna, termasuk mereka yang memiliki kebutuhan khusus. Dengan berbagai alat dan fitur, plugin ini membantu memastikan bahwa konten Anda dapat diakses dengan mudah oleh semua orang.
  * Version: 1.0
  * Author: Alat Aksesibilitas
  */
