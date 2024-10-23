@@ -15,40 +15,58 @@
                 </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-text-height"></i>
-                <span>Tinggi garis</span>
+                <button id="#">
+                    <i class="fas fa-text-height"></i>
+                    <span>Tinggi garis</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-arrows-alt-h"></i>
-                <span>Spasi teks</span>
+                <button id="#">
+                    <i class="fas fa-arrows-alt-h"></i>
+                    <span>Spasi teks</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-link"></i>
-                <span>Sorot tautan</span>
+                <button id="#">
+                    <i class="fas fa-link"></i>
+                    <span>Sorot tautan</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-adjust"></i>
-                <span>Kontras +</span>
+                <button id="#">
+                    <i class="fas fa-adjust"></i>
+                    <span>Kontras +</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-spinner"></i>
-                <span>Animasi dijeda</span>
+                <button id="#">
+                    <i class="fas fa-spinner"></i>
+                    <span>Animasi dijeda</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-info-circle"></i>
-                <span>Ramah Disleksia</span>
+                <button id="#">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Ramah Disleksia</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-mouse-pointer"></i>
-                <span>Kursor</span>
+                <button id="#">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>Kursor</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-comment-alt"></i>
-                <span>Keterangan alat</span>
+                <button id="#">
+                    <i class="fas fa-comment-alt"></i>
+                    <span>Keterangan alat</span>
+                </button>
             </div>
             <div class="widget-item">
-                <i class="fas fa-tint"></i>
-                <span>Kejenuhan</span>
+                <button id="#">
+                    <i class="fas fa-tint"></i>
+                    <span>Kejenuhan</span>
+                </button>
             </div>
         </div>
         <br>
