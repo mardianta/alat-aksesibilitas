@@ -348,7 +348,7 @@ You should also get your employer (if you work as a programmer) or
 your school, if any, to sign a "copyright disclaimer" for the program,
 if necessary. Here is a sample; alter the names:
 
-    signature of Ty Coon, 1 April 2024
+    signature of Amir Ibnu A, 1 April 2024
     Mardianta, President of Vice
 
 This General Public License does not permit incorporating your program
