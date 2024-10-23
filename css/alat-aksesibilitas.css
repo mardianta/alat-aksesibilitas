@@ -8,10 +8,14 @@
 }
 
 .copyright {
-    text-align: center; /* Menempatkan teks di tengah */
-    color: white; /* Mengubah warna teks menjadi putih */
-    background-color: black; /* (Opsional) Menambahkan latar belakang hitam agar teks lebih terlihat */
-    padding: 10px; /* (Opsional) Menambahkan sedikit ruang di sekitar teks */
+  text-align: center;
+  /* Menempatkan teks di tengah */
+  color: white;
+  /* Mengubah warna teks menjadi putih */
+  background-color: black;
+  /* (Opsional) Menambahkan latar belakang hitam agar teks lebih terlihat */
+  padding: 10px;
+  /* (Opsional) Menambahkan sedikit ruang di sekitar teks */
 }
 
 /* Custom CSS  */
@@ -225,13 +229,27 @@ body {
   border: 2px solid #007bff;
 }
 
-.hidden {
-  display: none; /* Kelas untuk menyembunyikan konten */
+.widget-item:hover {
+  border: 2px solid #007bff;
+  /* Blue background on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }
+
+.hidden {
+  display: none;
+  /* Kelas untuk menyembunyikan konten */
+}
+
 #googleLogo {
-  display: none; /* Tampilkan logo Google */
-  bottom: 10px; /* Atur posisi vertikal logo */
-  left: 10px; /* Atur posisi logo di kiri bawah */
-  width: 100px; /* Atur lebar logo */
-  position: fixed; /* Tetap pada posisi saat scroll */
+  display: none;
+  /* Tampilkan logo Google */
+  bottom: 10px;
+  /* Atur posisi vertikal logo */
+  left: 10px;
+  /* Atur posisi logo di kiri bawah */
+  width: 100px;
+  /* Atur lebar logo */
+  position: fixed;
+  /* Tetap pada posisi saat scroll */
 }
