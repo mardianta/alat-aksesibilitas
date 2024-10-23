@@ -26,3 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
       contentArea.style.fontSize = fontSizes[currentFontSizeIndex];
     });
   });
+
+  

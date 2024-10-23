@@ -1,7 +1,7 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <div id="accessibility-toolbar">
-  
-<div class="widget-container">
-    <h2>Alat Aksesibilitas</h2>
+
+    <div class="widget-container">
         <div class="widget-header">
             <h1>Widget kebesaran</h1>
             <button class="close-btn">&times;</button>
@@ -17,9 +17,9 @@
             </div>
             <div class="widget-item">
                 <button id="changeFontSizeBtn">
-                <i class="fas fa-text-height"></i>
-                <span>Teks Lebih Besar</span>
-</button>
+                    <i class="fas fa-text-height"></i>
+                    <span>Teks Lebih Besar</span>
+                </button>
             </div>
             <div class="widget-item">
                 <i class="fas fa-arrows-alt-h"></i>
@@ -59,4 +59,24 @@
             </div>
         </div>
     </div>
+
+
+    <div class="report-issue">
+        Laporkan masalah
+    </div>
+    <button class="manage-button">
+        Mengelola
+    </button>
+    <div class="logo">
+        <img alt="UserWay logo with a gradient blue and purple U shape" height="24" src="https://storage.googleapis.com/a1aa/image/h788vNO66c7bF9SnSW0ZrB7pt94cdI8MlOfXVrYfx4c1BgpTA.jpg" width="24" />
+        <div>
+            <div class="logo-text">
+                USERWAY
+            </div>
+            <div class="logo-subtext">
+                a Level Access company
+            </div>
+        </div>
+    </div>
+
 </div>
