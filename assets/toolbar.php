@@ -69,7 +69,7 @@
 </div>
 
 <!-- Logo Google -->
-<img id="googleLogo" src="https://unair.ac.id/wp-content/uploads/2021/02/unair-logo-borderFX.png" alt="Logo Google" style="cursor: pointer;">
+<img id="googleLogo" src="https://static.vecteezy.com/system/resources/thumbnails/018/873/935/small_2x/accessibility-setting-simple-human-character-universal-symbol-user-interface-theme-3d-icon-illustration-render-isolated-png.png" alt="Logo Disable" style="cursor: pointer;">
 
 <script>
     // Mendapatkan elemen tombol close, konten widget, dan logo Google
