@@ -7,6 +7,13 @@
   z-index: 100;
 }
 
+.copyright {
+    text-align: center; /* Menempatkan teks di tengah */
+    color: white; /* Mengubah warna teks menjadi putih */
+    background-color: black; /* (Opsional) Menambahkan latar belakang hitam agar teks lebih terlihat */
+    padding: 10px; /* (Opsional) Menambahkan sedikit ruang di sekitar teks */
+}
+
 /* Custom CSS  */
 .jumbotron {
   background-image: url('path/to/your/header-image.jpg');
