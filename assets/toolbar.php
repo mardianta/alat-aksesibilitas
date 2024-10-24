@@ -15,13 +15,13 @@
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="changeLineHeightBtn">
                     <i class="fas fa-text-height"></i>
                     <span>Tinggi garis</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="changeSpacingBtn">
                     <i class="fas fa-arrows-alt-h"></i>
                     <span>Spasi teks</span>
                 </button>
@@ -33,7 +33,7 @@
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="changeContrastBtn">
                     <i class="fas fa-adjust"></i>
                     <span>Kontras +</span>
                 </button>
@@ -45,13 +45,13 @@
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="changeFontBtn">
                     <i class="fas fa-info-circle"></i>
                     <span>Ramah Disleksia</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="changeCursorSizeBtn">
                     <i class="fas fa-mouse-pointer"></i>
                     <span>Kursor</span>
                 </button>
