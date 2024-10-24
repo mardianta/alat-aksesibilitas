@@ -84,6 +84,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.cursor = cursorSizes[currentCursorSizeIndex];
     });
 
-    
-
+  
   });
