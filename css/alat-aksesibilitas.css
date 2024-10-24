@@ -246,9 +246,9 @@ body {
 #googleLogo {
   display: none;
   /* Tampilkan logo Google */
-  bottom: 10px;
+  bottom: 15px;
   /* Atur posisi vertikal logo */
-  left: 10px;
+  left: 15px;
   /* Atur posisi logo di kiri bawah */
   width: 100px;
   /* Atur lebar logo */
