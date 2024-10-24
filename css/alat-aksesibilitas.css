@@ -238,6 +238,13 @@ body {
   /* Change cursor to pointer on hover */
 }
 
+.widget-item:active {
+  border: 2px solid #007bff;
+  /* Blue background on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
 .hidden {
   display: none;
   /* Kelas untuk menyembunyikan konten */
