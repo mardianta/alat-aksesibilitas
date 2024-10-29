@@ -9,63 +9,63 @@
     <div class="widget-container" id="widgetContainer">
         <div class="widget-grid">
             <div class="widget-item">
-                <button id="changeFontSizeBtn">
+                <button id="changeFontSizeBtn" class="buton">
                     <i class="fas fa-text-height"></i>
                     <span>Teks Lebih Besar</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="changeLineHeightBtn">
+                <button id="changeLineHeightBtn" class="buton">
                     <i class="fas fa-text-height"></i>
                     <span>Tinggi garis</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="changeSpacingBtn">
+                <button id="changeSpacingBtn" class="buton">
                     <i class="fas fa-arrows-alt-h"></i>
                     <span>Spasi teks</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="#" class="buton">
                     <i class="fas fa-link"></i>
                     <span>Sorot tautan</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="changeContrastBtn">
+                <button id="changeContrastBtn" class="buton">
                     <i class="fas fa-adjust"></i>
                     <span>Kontras +</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="#" class="buton">
                     <i class="fas fa-spinner"></i>
                     <span>Animasi dijeda</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="changeFontBtn">
+                <button id="changeFontBtn" class="buton">
                     <i class="fas fa-info-circle"></i>
                     <span>Ramah Disleksia</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="changeCursorSizeBtn">
+                <button id="changeCursorSizeBtn" class="buton">
                     <i class="fas fa-mouse-pointer"></i>
                     <span>Kursor</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="#" class="buton">
                     <i class="fas fa-comment-alt"></i>
                     <span>Keterangan alat</span>
                 </button>
             </div>
             <div class="widget-item">
-                <button id="#">
+                <button id="languageBtn" class="buton">
                     <i class="fas fa-tint"></i>
-                    <span>Kejenuhan</span>
+                    <span>Ganti Bahasa</span>
                 </button>
             </div>
         </div>
@@ -86,9 +86,12 @@
 </div>
 </div>
 
+
 <!-- Logo Aksesbiliti -->
 <img id="googleLogo" src="https://static.vecteezy.com/system/resources/thumbnails/018/873/935/small_2x/accessibility-setting-simple-human-character-universal-symbol-user-interface-theme-3d-icon-illustration-render-isolated-png.png" alt="Logo Disable" style="cursor: pointer;">
 <a style="display: none;" target="_blank" href="https://unair.ac.id/"></a>
+
+
 <script>
     // Mendapatkan elemen tombol close, konten widget, dan logo Google
     const closeButton = document.getElementById('closeButton');
@@ -127,5 +130,30 @@
         closeIcon.classList.remove('fa-plus'); // Menghapus ikon plus
         closeIcon.classList.add('fa-times'); // Menambahkan ikon close
         googleLogo.style.display = 'none'; // Menyembunyikan logo Google
+    });
+
+    // Menambahkan event listener untuk menggeser toolbar
+    let isDragging = false;
+    let offset = {
+        x: 0,
+        y: 0
+    };
+
+    accessibilityToolbar.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        offset.x = e.clientX - accessibilityToolbar.getBoundingClientRect().left;
+        offset.y = e.clientY - accessibilityToolbar.getBoundingClientRect().top;
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            accessibilityToolbar.style.position = 'absolute';
+            accessibilityToolbar.style.left = (e.clientX - offset.x) + 'px';
+            accessibilityToolbar.style.top = (e.clientY - offset.y) + 'px';
+        }
+    });
+
+    document.addEventListener('mouseup', function() {
+        isDragging = false;
     });
 </script>
